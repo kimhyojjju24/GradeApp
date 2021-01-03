@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/colorWhite">
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="45dp"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/logo_horizontal"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="10dp"/>
+
+
+                <com.example.pojangapp.main.banner.AutoScrollViewPager
+                    android:id="@+id/autoViewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginBottom="5dp">
+                </com.example.pojangapp.main.banner.AutoScrollViewPager>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp">
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+                            <ImageButton
+                                android:id="@+id/btnStore1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:src="@drawable/ttoekbboki_non"
+                                android:adjustViewBounds="true"
+                                android:scaleType="fitCenter"
+                                android:background="@null"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="분식"
+                                android:theme="@style/contenttmM"
+                                android:layout_gravity="bottom|center_horizontal"/>
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+                            <ImageButton
+                                android:id="@+id/btnStore2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:src="@drawable/fishbread_non"
+                                android:adjustViewBounds="true"
+                                android:scaleType="fitCenter"
+                                android:background="@null"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="붕어빵"
+                                android:theme="@style/contenttmM"
+                                android:layout_gravity="bottom|center_horizontal"/>
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+                            <ImageButton
+                                android:id="@+id/btnStore3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:src="@drawable/hottoek_non"
+                                android:adjustViewBounds="true"
+                                android:scaleType="fitCenter"
+                                android:background="@null"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="호떡"
+                                android:theme="@style/contenttmM"
+                                android:layout_gravity="bottom|center_horizontal"/>
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+                            <ImageButton
+                                android:id="@+id/btnStore4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:src="@drawable/tanghuru_non"
+                                android:adjustViewBounds="true"
+                                android:scaleType="fitCenter"
+                                android:background="@null"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="탕후루"
+                                android:theme="@style/contenttmM"
+                                android:layout_gravity="bottom|center_horizontal"/>
+                        </FrameLayout>
+
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp" >
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+                            <ImageButton
+                                android:id="@+id/btnStore5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:src="@drawable/chicken_non"
+                                android:adjustViewBounds="true"
+                                android:scaleType="fitCenter"
+                                android:background="@null"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="꼬꼬닭"
+                                android:theme="@style/contenttmM"
+                                android:layout_gravity="bottom|center_horizontal"/>
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+                            <ImageButton
+                                android:id="@+id/btnStore6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:src="@drawable/takoyaki_non"
+                                android:adjustViewBounds="true"
+                                android:scaleType="fitCenter"
+                                android:background="@null"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="타코야끼"
+                                android:theme="@style/contenttmM"
+                                android:layout_gravity="bottom|center_horizontal" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+                            <ImageButton
+                                android:id="@+id/btnStore7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:src="@drawable/toast_non"
+                                android:adjustViewBounds="true"
+                                android:scaleType="fitCenter"
+                                android:background="@null"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="토스트"
+                                android:theme="@style/contenttmM"
+                                android:layout_gravity="bottom|center_horizontal" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+                            <ImageButton
+                                android:id="@+id/btnStore8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:src="@drawable/sweetpotato_non"
+                                android:adjustViewBounds="true"
+                                android:scaleType="fitCenter"
+                                android:background="@null"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="군고구밤"
+                                android:theme="@style/contenttmM"
+                                android:layout_gravity="bottom|center_horizontal"/>
+                        </FrameLayout>
+                    </TableRow>
+
+                </TableLayout>
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@color/colorWhite"
+                    app:layout_constraintBottom_toTopOf="@id/guide_line"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    android:elevation="5dp"/>
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guide_line"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_percent="0.5"/>
+
+
+                <SearchView
+                    android:id="@+id/search_bar"
+                    android:layout_width="340dp"
+                    android:layout_height="50dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:theme="@style/contenttm"
+                    android:background="@drawable/search_bar"
+                    android:elevation="5dp"
+                    android:queryHint="검색 할 내용을 입력해주세요."/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@null">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="15dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="10dp">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+                        <ImageButton
+                            android:id="@+id/buttonEmoney"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:src="@drawable/dollar"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            android:layout_gravity="center"
+                            android:background="@null"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="포차머니"
+                            android:theme="@style/contenttmM"
+                            android:layout_gravity="bottom|center_horizontal"/>
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+                        <ImageButton
+                            android:id="@+id/buttonMypage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:src="@drawable/user"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            android:layout_gravity="center"
+                            android:background="@null"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="My Page"
+                            android:theme="@style/contenttmM"
+                            android:layout_gravity="bottom|center_horizontal"/>
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+                        <ImageButton
+                            android:id="@+id/buttonMap"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:src="@drawable/holder"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            android:layout_gravity="center"
+                            android:background="@null"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="주변매장"
+                            android:theme="@style/contenttmM"
+                            android:layout_gravity="bottom|center_horizontal"/>
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+                        <ImageButton
+                            android:id="@+id/buttonCart"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:src="@drawable/cart"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            android:layout_gravity="center"
+                            android:background="@null"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="장바구니"
+                            android:theme="@style/contenttmM"
+                            android:layout_gravity="bottom|center_horizontal"/>
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="신규 매장"
+                        android:textSize="18sp"
+                        android:theme="@style/contenttmL"
+                        android:textStyle="bold"/>
+
+                    <ImageButton
+                        android:id="@+id/buttonRefresh"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/refresh"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"/>
+
+                </LinearLayout>
+
+
+                <HorizontalScrollView
+                    android:id="@+id/scrollView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none"
+                    android:paddingLeft="5dp">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </androidx.recyclerview.widget.RecyclerView>
+
+                </HorizontalScrollView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

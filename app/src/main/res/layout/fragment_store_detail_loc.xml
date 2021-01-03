@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".storedetail.StoreDetailLocFragment"
+    android:orientation="vertical">
+
+<!--    <ScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:orientation="vertical">-->
+            <LinearLayout
+                android:id="@+id/textLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="15dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="위치"
+                    android:theme="@style/contenttmL"/>
+                <TextView
+                    android:id="@+id/textLoc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ㅇㅇ시 ㅇㅇ구 ㅇㅇ동"
+                    android:theme="@style/contenttm"/>
+                <TextView
+                    android:id="@+id/textLocDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ㅇㅇ초등학교 정문 앞"
+                    android:theme="@style/contenttm"/>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/contenttmL"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:text="주변 버스 정보"/>
+
+            <TextView
+                android:id="@+id/textBusNotice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="근처 150m이내 버스 정보가 없습니다."
+                android:gravity="center"
+                android:layout_margin="15dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerBus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+<!--            <RelativeLayout-->
+<!--                android:id="@+id/map_view"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"/>-->
+
+<!--        </LinearLayout>-->
+<!--        -->
+<!--    </ScrollView>-->
+
+
+</LinearLayout>

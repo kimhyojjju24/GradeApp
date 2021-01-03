@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pay.PayLoaderFragment">
+
+    <TextView
+        android:id="@+id/textPay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="결제 버튼을 눌러주세요."
+        android:theme="@style/contenttmL"
+        android:gravity="center"/>
+
+
+    <Button
+        android:id="@+id/buttonPay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_gradient"
+        android:theme="@style/contenttmL"
+        android:textColor="@color/colorWhite"
+        android:layout_margin="5dp"
+        android:elevation="10dp"
+        android:focusable="false"
+        android:layout_alignParentBottom="true"
+        android:text="결제하기"/>
+
+</RelativeLayout>

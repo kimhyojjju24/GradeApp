@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    android:background="@color/colorWhite"
+    app:cardCornerRadius="5dp"
+    android:id="@+id/cardView">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="15dp">
+        <TextView
+            android:id="@+id/textReviewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="dddddddddd"
+            android:theme="@style/contenttm"
+            android:textColor="#000000"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/textReviewBuy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ddddddd"
+            android:theme="@style/contenttmS"
+            android:layout_marginBottom="10dp"/>
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:isIndicator="false" />
+
+        <TextView
+            android:id="@+id/textContents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="가나다라마바사아자차카타파사가나다라마바사아자차카타파fdfsaffdsafdsafdsafdsafdsafdsafdsfdsafdsafdsafdsafdsafdsafdsafdsafdsfdsafdsafdsaf하가나다라마바사아자차카타파하가나다라마바사아차자카타파" />
+
+        <LinearLayout
+            android:id="@+id/reviewLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/textReviewDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ddddddd"
+            android:theme="@style/contenttmS"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"/>
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>

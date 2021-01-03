@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:layout_margin="3dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:background="@drawable/bus"
+            android:layout_marginRight="10dp"/>
+        <TextView
+            android:id="@+id/textBusStop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/contenttm"
+            android:textSize="13dp"/>
+    </LinearLayout>
+</LinearLayout>

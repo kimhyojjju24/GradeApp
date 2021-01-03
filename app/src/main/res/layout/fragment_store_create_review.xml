@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".storedetail.create.StoreCreateComplainFragment"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    android:id="@+id/fragmentStoreCreateReview">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_margin="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="5dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="매장 명"
+                android:theme="@style/contenttm"
+                android:textSize="15dp"
+                android:gravity="center_vertical"/>
+            <TextView
+                android:id="@+id/textStoreName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:text="ㅇㅇㅇ 매장"
+                android:theme="@style/contenttmL"
+                android:textSize="17dp"
+                android:gravity="center_vertical"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="5dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="구입 메뉴"
+                android:theme="@style/contenttm"
+                android:textSize="15dp"/>
+            <TextView
+                android:id="@+id/textMenuName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:text="ㅇㅇㅇ 외 0개"
+                android:theme="@style/contenttmL"
+                android:gravity="center_vertical"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:layout_margin="10dp">
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:stepSize="0.5"
+            android:layout_centerHorizontal="true"/>
+
+        <EditText
+            android:id="@+id/editDetail"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_margin="10dp"
+            android:theme="@style/contenttm"
+            android:textColor="#000"
+            android:layout_below="@+id/ratingBar"
+            android:gravity="top"
+            android:background="@drawable/edit_box"
+            android:padding="10dp"
+            android:hint="리뷰 내용을 입력 해 주세요."/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editDetail"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true">
+            <TextView
+                android:id="@+id/textByte"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:theme="@style/contenttmM"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/100byte"
+                android:theme="@style/contenttmM"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_gradient"
+        android:theme="@style/contenttmL"
+        android:textColor="@color/colorWhite"
+        android:layout_margin="5dp"
+        android:elevation="10dp"
+        android:text="저장"/>
+
+
+</LinearLayout>
