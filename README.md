@@ -1,6 +1,8 @@
 # PojangApp
 
-<h3>build.gradle</h3>
+## usage
+
+### build.gradle
 
     compileSdkVersion 29 
     buildToolsVersion "29.0.2"
